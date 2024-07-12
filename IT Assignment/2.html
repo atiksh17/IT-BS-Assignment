@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      width: 400px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    .main {
+      background-color: black;
+      color: yellow;
+      text-align: center;
+    }
+
+    .title {
+      text-align: right;
+      padding-right: 15px;
+    }
+
+    p {
+      color: yellow;
+    }
+
+    .borders {
+      background-color: orange;
+      width: 100%;
+    }
+
+    .borders td {
+      color: white;
+    }
+
+    td {
+      color: yellow;
+    }
+
+    tr {
+      background-color: black;
+    }
+
+    .submit,
+    .cancel {
+
+      margin: 5px 2px;
+      width: 75px;
+      height: 30px;
+    }
+
+    .submit {
+      background-color: rgb(0, 189, 0);
+      color: white;
+      border: 0;
+    }
+
+    .cancel {
+      background-color: red;
+      color: white;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr class="borders">
+      <td colspan="2">Sign up</td>
+    </tr>
+    <tr>
+      <td class="title">
+        First Name
+      </td>
+      <td>
+        <input type="text">
+      </td>
+    </tr>
+    <tr>
+      <td class="title">Last Name</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td class="title">Date of Birth</td>
+      <td><input type="date"></td>
+    </tr>
+    <tr>
+      <td class="title">Gender</td>
+      <td><input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+      </td>
+    </tr>
+    <tr>
+      <td class="title">Country</td>
+      <td><select name="Country">
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select></td>
+    </tr>
+
+    <tr>
+      <td class="title">E-mail</td>
+      <td><input type="email"></td>
+    </tr>
+    <tr>
+      <td class="title">Phone</td>
+      <td><input type="number"></td>
+    </tr>
+    <tr>
+      <td class="title">Password</td>
+      <td><input type="password"></td>
+    </tr>
+    <tr>
+      <td class="title">Confirm Password</td>
+      <td><input type="password"></td>
+    </tr>
+    <tr>
+      <td class="title" colspan="2"><input type="checkbox" name="agree"> I Agree to the Terms of use</td>
+    </tr>
+    <tr class="borders title">
+      <td colspan="2">
+        <input type="submit" value="Submit" class="submit">
+        <input type="button" value="Cancel" class="cancel">
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

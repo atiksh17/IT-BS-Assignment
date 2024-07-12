@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    span {
+      font-size: 40px;
+      text-align: center;
+      font-family: "Comic Neue", Helvetica, sans-serif;
+      font-weight: 800;
+      width: 100%;
+    }
+
+    table {
+      border: 1px solid black;
+      padding: 10px;
+      color: white;
+      width: 500px;
+      background-color: wheat;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    thead {
+      background-color: red;
+      height: 10px;
+    }
+
+
+    input[type="submit"] {
+      background-color: rgb(255, 234, 0);
+      color: black;
+      font-weight: bold;
+      padding: 7px;
+    }
+
+    input,
+    textarea {
+      padding: 10px 5px;
+      margin-top: 10px;
+      width: 100%
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <td align="center" style="padding: 10px;">
+        <span>Contact Us!</span>
+      </td>
+    </thead>
+    <tr>
+      <td>
+        <input type="text" placeholder="Name">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="email" name="email" placeholder="Email">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="text" placeholder="Subject">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <textarea name="message" placeholder="Message..." rows="4"></textarea>
+        <input type="submit" value="SEND MESSAGE">
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
